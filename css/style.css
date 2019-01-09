@@ -26,3 +26,11 @@ body {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+
+
+
+/* Global
+====================================================================== */
+.container {
+  margin: auto;
+}
