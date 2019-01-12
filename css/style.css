@@ -1,0 +1,362 @@
+/* Variables
+====================================================================== */
+:root {
+  --background-color: #fafafa;
+  --background-color-dark: #333;
+  --text-color-primary: #111;
+  --text-color-highlight: #2196f3;
+  --text-color-highlight-darker: #1976d2;
+  --text-color-gray: #9e9e9e;
+  --image-overlay: rgba(0, 0, 0, 0.7);
+}
+
+/* Resets
+====================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: var(--background-color);
+  color: var(--text-color-primary);
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+
+
+/* Global
+====================================================================== */
+.container {
+  margin: auto;
+}
+
+.primary-text {
+  color: var(--text-color-highlight);
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-height: 400px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+input,
+button,
+textarea {
+  margin-bottom: 0.5rem;
+  border: none;
+  padding: 0.5rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+
+/* Navbar/Header
+====================================================================== */
+#main-header {
+  background-color: var(--background-color);
+  opacity: 0.95;
+  border-bottom: 3px solid var(--text-color-highlight);
+  padding: 0.75rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+#navbar {
+  text-transform: uppercase;
+}
+
+#navbar ul {
+  margin: 0.9rem 0;
+}
+
+#navbar li {
+  display: inline;
+  padding-right: 1rem;
+  border-bottom: 3px solid transparent;
+}
+
+#navbar a {
+  padding-bottom: 0.25rem;
+  border-bottom: 3px solid transparent;
+  color: var(--text-color-gray);
+  font-weight: 700;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#navbar a:hover,
+#navbar li .current {
+  color: var(--text-color-highlight);
+  border-bottom: 3px solid var(--text-color-highlight);
+}
+
+@media screen and (max-width: 991px) {
+
+  #main-header h1 {
+    font-size: 1.5rem;
+  }
+
+  #navbar a {
+    font-size: 0.9rem;
+  }
+
+}
+
+
+
+/* Showcase
+====================================================================== */
+#showcase {
+  margin-top: 78px;
+  background-image: url(../img/showcase.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  -webkit-box-shadow: 0px 5px 10px var(--text-color-gray);
+  box-shadow: 0px 5px 10px var(--text-color-gray);
+}
+
+#showcase .row {
+  height: 600px;
+}
+
+#showcase h1 {
+  font-size: 3rem;
+}
+
+#showcase .showcase-content {
+  border-radius: 0.5rem;
+  background-color: var(--image-overlay);
+  padding: 2.5rem;
+  color: var(--background-color);
+}
+
+@media screen and (max-width: 767px) {
+
+  #showcase h1 {
+    font-size: 2rem;
+  }
+
+  #showcase p {
+    font-size: 0.9rem;
+  }
+
+  #showcase .showcase-content {
+    padding: 1rem;
+  }
+
+}
+
+
+/* Features
+====================================================================== */
+#features p {
+  padding-bottom: 0.5rem;
+  margin-bottom: 2.5rem;
+}
+
+#features i {
+  font-size: 3rem;
+  color: var(--text-color-highlight);
+  padding-bottom: 0.5rem;
+}
+
+#features h4 {
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+
+
+/* Info
+====================================================================== */
+#info {
+  background-image: url(../img/info-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: var(--background-color);
+}
+
+#info li {
+  line-height: 2.0;
+}
+
+#info .info-column {
+  padding: 3rem;
+}
+
+
+
+/* Company
+====================================================================== */
+#company {
+  padding: 2rem;
+  background-color: var(--background-color-dark);
+  color: var(--background-color);
+}
+
+#company h4 {
+  text-transform: uppercase;
+}
+
+#company .row ul,
+#company .row p {
+  font-size: 0.8rem;
+  line-height: 1.8;
+}
+
+#company .row button {
+  color: var(--background-color);
+  background-color: var(--text-color-highlight);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#company .row button:hover {
+  cursor: pointer;
+  background-color: var(--text-color-highlight-darker);
+}
+
+@media screen and (max-width: 767px) {
+
+  #company {
+    padding: 2rem 2rem 0 2rem;
+  }
+
+  #company .company-column {
+    padding-bottom: 2rem;
+  }
+
+}
+
+
+
+/* Footer
+====================================================================== */
+#main-footer {
+  background-color: var(--text-color-primary);
+  color: var(--text-color-gray);
+  padding: 1rem;
+  font-size: 0.8rem;
+}
+
+
+
+/* Subheader
+====================================================================== */
+#subheader {
+  margin-top: 78px;
+  background-color: var(--background-color-dark);
+  color: var(--background-color);
+  -webkit-box-shadow: 0px 5px 10px var(--text-color-gray);
+  box-shadow: 0px 5px 10px var(--text-color-gray);
+}
+
+#subheader h2 {
+  padding: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+
+  #subheader {
+    margin-top: 115.78px;
+  }
+
+}
+
+
+/* Inner Pages Content
+====================================================================== */
+#page {
+  margin: 2.5rem 0;
+}
+
+
+
+/* About Page 
+====================================================================== */
+.about p {
+  margin-bottom: 1rem;
+}
+
+
+
+/* Services Page 
+====================================================================== */
+.services li {
+  padding: 0.75rem;
+}
+
+
+
+/* Contact Page 
+====================================================================== */
+.contact form {
+  padding: 1.25rem;
+}
+
+.contact form input[type="text"],
+.contact form input[type="email"],
+.contact form textarea {
+  border: 1px solid var(--text-color-gray);
+  border-radius: 0.25rem;
+  width: 70%;
+  height: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact form textarea {
+  height: initial;
+}
+
+.contact form button {
+  width: 70%;
+  padding: 1rem 2rem;
+  background-color: var(--text-color-highlight);
+  color: var(--background-color);
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin: 0 auto;
+}
+
+.contact form button:hover {
+  background-color: var(--text-color-highlight-darker);
+}
+
+@media screen and (max-width: 767px) {
+
+  .contact form input[type="text"],
+  .contact form input[type="email"],
+  .contact form textarea,
+  .contact form button {
+    width: 100%;
+  }
+
+}
