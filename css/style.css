@@ -188,6 +188,7 @@ button {
 }
 
 
+
 /* Info
 ====================================================================== */
 #info {
@@ -202,12 +203,16 @@ button {
   line-height: 2.0;
 }
 
+#info .info-column {
+  padding-bottom: 2rem;
+}
+
 
 
 /* Company
 ====================================================================== */
 #company {
-  padding: 3rem 0;
+  padding: 2rem;
   background: var(--background-color-dark);
   color: var(--background-color);
 }
@@ -231,4 +236,27 @@ button {
 #company .row button:hover {
   cursor: pointer;
   background-color: var(--text-color-highlight-darker);
+}
+
+@media screen and (max-width: 767px) {
+
+  #company {
+    padding: 2rem 2rem 0 2rem;
+  }
+
+  #company .company-column {
+    padding-bottom: 2rem;
+  }
+
+}
+
+
+
+/* Footer
+====================================================================== */
+#main-footer {
+  background-color: var(--text-color-primary);
+  color: var(--text-color-gray);
+  padding: 1rem;
+  font-size: 0.8rem;
 }
