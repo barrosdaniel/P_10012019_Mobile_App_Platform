@@ -3,6 +3,8 @@
 :root {
   --background-color: #fafafa;
   --text-color-primary: #111;
+  --text-color-highlight: #2196f3;
+  --text-color-gray: #9e9e9e;
 }
 
 /* Resets
@@ -18,7 +20,7 @@ body {
   height: 100%;
   background-color: var(--background-color);
   color: var(--text-color-primary);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
@@ -35,6 +37,10 @@ img {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 
 
 /* Global
@@ -44,13 +50,45 @@ img {
 }
 
 .primary-text {
-  color: cyan;
+  color: var(--text-color-highlight);
 }
 
 
 
-/* Navbar
+/* Navbar/Header
 ====================================================================== */
+#main-header {
+  border-bottom: 3px solid var(--text-color-highlight);
+  padding: 0.75rem 0;
+}
+
+#navbar {
+  text-transform: uppercase;
+}
+
+#navbar ul {
+  margin: 0.9rem 0;
+}
+
+#navbar li {
+  display: inline;
+  padding-right: 1rem;
+  border-bottom: 3px solid transparent;
+}
+
+#navbar a {
+  padding-bottom: 0.25rem;
+  border-bottom: 3px solid transparent;
+  color: var(--text-color-gray);
+  font-weight: 700;
+  transition: 0.4s;
+}
+
+#navbar a:hover,
+#navbar li .current {
+  color: var(--text-color-highlight);
+  border-bottom: 3px solid var(--text-color-highlight);
+}
 
 
 
