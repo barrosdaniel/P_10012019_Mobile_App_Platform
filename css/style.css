@@ -61,7 +61,8 @@ h2 {
 }
 
 input,
-button {
+button,
+textarea {
   margin-bottom: 0.5rem;
   border: none;
   padding: 0.5rem;
@@ -213,7 +214,7 @@ button {
 ====================================================================== */
 #company {
   padding: 2rem;
-  background: var(--background-color-dark);
+  background-color: var(--background-color-dark);
   color: var(--background-color);
 }
 
@@ -259,4 +260,97 @@ button {
   color: var(--text-color-gray);
   padding: 1rem;
   font-size: 0.8rem;
+}
+
+
+
+/* Subheader
+====================================================================== */
+#subheader {
+  margin-top: 78px;
+  background-color: var(--background-color-dark);
+  color: var(--background-color);
+  box-shadow: 0px 5px 10px var(--text-color-gray);
+}
+
+#subheader h2 {
+  padding: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+
+  #subheader {
+    margin-top: 115.78px;
+  }
+
+}
+
+
+/* Inner Pages Content
+====================================================================== */
+#page {
+  margin: 2.5rem 0;
+}
+
+
+
+/* About Page 
+====================================================================== */
+.about p {
+  margin-bottom: 1rem;
+}
+
+
+
+/* Services Page 
+====================================================================== */
+.services li {
+  padding: 0.75rem;
+}
+
+
+
+/* Contact Page 
+====================================================================== */
+.contact form {
+  padding: 1.25rem;
+}
+
+.contact form input[type="text"],
+.contact form input[type="email"],
+.contact form textarea {
+  border: 1px solid var(--text-color-gray);
+  border-radius: 0.25rem;
+  width: 70%;
+  height: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact form textarea {
+  height: initial;
+}
+
+.contact form button {
+  width: 70%;
+  padding: 1rem 2rem;
+  background-color: var(--text-color-highlight);
+  color: var(--background-color);
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 0 auto;
+}
+
+.contact form button:hover {
+  background-color: var(--text-color-highlight-darker);
+}
+
+@media screen and (max-width: 767px) {
+
+  .contact form input[type="text"],
+  .contact form input[type="email"],
+  .contact form textarea,
+  .contact form button {
+    width: 100%;
+  }
+
 }
