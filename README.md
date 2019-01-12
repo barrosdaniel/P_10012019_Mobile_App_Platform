@@ -6,7 +6,7 @@ Front-end features implemented. Inspired by a design by Brad Traversy.
 
 Visit the [website](https://www.appplatform.maturedev.com). Currently hosted with [bluehost](https://www.bluehost.com/).
 
-##Technologies Used
+## Technologies Used
 * HTML5;
 * CSS3 (Variables. Libraries: FlexboxGridCSS)
 * Responsive Design (Media queries)
@@ -14,7 +14,7 @@ Visit the [website](https://www.appplatform.maturedev.com). Currently hosted wit
 * Website Optimisation (Performance Optimisation, Cross-browser Testing, Cross-browser Compatibility, Lighthouse Audit)
 * Deployed to bluehost with cPanel
 
-##Lighthouse Audit Results
+## Lighthouse Audit Results
 Performance: 95;
 Best Practices: 100;
 SEO: 100.
